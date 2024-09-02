@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jadwals",
+  "info": {
+    "singularName": "jadwal",
+    "pluralName": "jadwals",
+    "displayName": "Jadwal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "deskripsi": {
+      "type": "text"
+    },
+    "waktu": {
+      "type": "datetime"
+    },
+    "kelas_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kelas.kelas"
+    },
+    "tipe": {
+      "type": "enumeration",
+      "enum": [
+        "kelas",
+        "ujian"
+      ]
+    }
+  }
+}

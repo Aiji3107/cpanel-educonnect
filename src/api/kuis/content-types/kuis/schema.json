@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kuiss",
+  "info": {
+    "singularName": "kuis",
+    "pluralName": "kuiss",
+    "displayName": "Kuis"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string"
+    },
+    "jenis": {
+      "type": "enumeration",
+      "enum": [
+        "PG",
+        "essai"
+      ]
+    },
+    "guru_ids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::guru.guru"
+    },
+    "kelas_ids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::kelas.kelas"
+    },
+    "pertanyaan": {
+      "type": "json"
+    },
+    "jawaban": {
+      "type": "json"
+    }
+  }
+}

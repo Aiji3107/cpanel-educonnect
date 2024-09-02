@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pembayarans",
+  "info": {
+    "singularName": "pembayaran",
+    "pluralName": "pembayarans",
+    "displayName": "Pembayaran"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "murid_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::murid.murid"
+    },
+    "semester": {
+      "type": "enumeration",
+      "enum": [
+        "semester 1",
+        "semester 2",
+        "semester 3",
+        "semester 4",
+        "semester 5"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "lunas",
+        "belum lunas"
+      ]
+    },
+    "tanggal_bayar": {
+      "type": "date"
+    }
+  }
+}

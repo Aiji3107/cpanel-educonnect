@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gurus",
+  "info": {
+    "singularName": "guru",
+    "pluralName": "gurus",
+    "displayName": "Guru",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "mata_pelajaran": {
+      "type": "enumeration",
+      "enum": [
+        "Matematika",
+        "Fisika",
+        "Biologi",
+        "Kimia",
+        "Pendidikan Agama",
+        "Ilmu Sosial dan Budaya Dasar",
+        "Bahasa Inggris",
+        "Pendidikan Kewarganegaraan",
+        "Matematika Dasar 1",
+        "Algoritma dan Pemrograman 1",
+        "Pengantar Teknologi Informasi",
+        "Statistika 1"
+      ]
+    },
+    "jabatan": {
+      "type": "enumeration",
+      "enum": [
+        "Guru",
+        "Dosen",
+        "Wakil Kepala Sekolah"
+      ]
+    }
+  }
+}

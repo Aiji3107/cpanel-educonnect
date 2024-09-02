@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "absensis",
+  "info": {
+    "singularName": "absensi",
+    "pluralName": "absensis",
+    "displayName": "Absensi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "murid_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::murid.murid"
+    },
+    "tanggal": {
+      "type": "date"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "hadir",
+        "tidak hadir"
+      ]
+    }
+  }
+}

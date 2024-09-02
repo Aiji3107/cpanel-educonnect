@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "murids",
+  "info": {
+    "singularName": "murid",
+    "pluralName": "murids",
+    "displayName": "Murid",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "kelas": {
+      "type": "enumeration",
+      "enum": [
+        "Kelas 1",
+        "Kelas 2",
+        "Kelas 3"
+      ]
+    },
+    "jurusan": {
+      "type": "enumeration",
+      "enum": [
+        "IPA",
+        "IPS",
+        "BAHASA",
+        "Sistem Informasi",
+        "Sistem Komputer"
+      ]
+    },
+    "semester": {
+      "type": "enumeration",
+      "enum": [
+        "Semester 1",
+        "Semester 2",
+        "Semester 3",
+        "Semester 4",
+        "Semester 5",
+        "Semester 6",
+        "Semester 7",
+        "Semester 8"
+      ]
+    }
+  }
+}

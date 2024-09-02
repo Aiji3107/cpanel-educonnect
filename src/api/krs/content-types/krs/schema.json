@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "krss",
+  "info": {
+    "singularName": "krs",
+    "pluralName": "krss",
+    "displayName": "KRS",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "murid_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::murid.murid"
+    },
+    "semester": {
+      "type": "enumeration",
+      "enum": [
+        "semester 1",
+        "semester 2",
+        "semester 3",
+        "semester 4 ",
+        "semester 5 ",
+        "semester 6 ",
+        "semester 7",
+        "semester 8",
+        "semester 9",
+        "semester 10"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "disetujui",
+        "ditolak"
+      ]
+    }
+  }
+}

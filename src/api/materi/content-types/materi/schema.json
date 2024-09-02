@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materis",
+  "info": {
+    "singularName": "materi",
+    "pluralName": "materis",
+    "displayName": "Materi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string"
+    },
+    "tipe": {
+      "type": "enumeration",
+      "enum": [
+        "video",
+        "teks"
+      ]
+    },
+    "konten": {
+      "type": "blocks"
+    },
+    "guru_ids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::guru.guru"
+    },
+    "kelas_ids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::kelas.kelas"
+    }
+  }
+}
